@@ -119,13 +119,13 @@ EOF
 
 }
 
-resource "aws_instance" "bastion1" {
-  ami                    = data.aws_ami.ubuntu.id
-  instance_type          = "t3.small"
-  subnet_id              = module.vpc.public_subnets[0]
-  key_name               = "bastion"
-  vpc_security_group_ids = [aws_security_group.bastion_host_security_group.id]
-  tags = {
-    Name = "BastionHost1"
-  }
-}
+#resource "aws_instance" "bastion1" {
+#  ami                    = data.aws_ami.ubuntu.id
+#  instance_type          = "t3.small"
+#  subnet_id              = module.vpc.public_subnets[0]
+#  key_name               = "bastion"
+#  vpc_security_group_ids = [aws_security_group.bastion_host_security_group.id]
+#  tags = {
+#    Name = "BastionHost1"
+#  }
+#}
