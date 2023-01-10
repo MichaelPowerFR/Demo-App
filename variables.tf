@@ -112,7 +112,7 @@ variable "lb_type" {
 
 variable "node_count" {
   type        = number
-  default     = 5
+  default     = 3
   description = "Number of Vault nodes to deploy in ASG"
 }
 
