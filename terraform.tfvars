@@ -18,4 +18,4 @@ leader_tls_servername = "vault.demo.internal"
 lb_type               = "application"
 node_count            = 3
 vault_version         = "1.8.2"
-ipv4_cidr_block       = "49.36.170.82/32"
+ipv4_cidr_block       = "86.254.98.54/32"
