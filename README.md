@@ -36,7 +36,7 @@ EOH
 
 # Run in the Bastion host
 export VAULT_ADDR='http://INTERNAL_LB_ADDRESS:8200'
-curl -o /etc/ssh/trusted-user-ca-keys.pem $VAULT_ADDR/v1/ssh-client-signer/public_key
+sudo curl -o /etc/ssh/trusted-user-ca-keys.pem $VAULT_ADDR/v1/ssh-client-signer/public_key
 vault read -field=public_key ssh-client-signer/config/ca > /etc/ssh/trusted-user-ca-keys.pem
 
 vi  /etc/ssh/sshd_config
